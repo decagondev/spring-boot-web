@@ -28,6 +28,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb
+	implementation 'com.amazonaws:aws-java-sdk-dynamodb:1.12.353'
+	// https://mvnrepository.com/artifact/com.github.derjust/spring-data-dynamodb
+	implementation 'com.github.derjust:spring-data-dynamodb:5.1.0'
 }
 
 tasks.named('bootBuildImage') {
